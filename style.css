@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* スクロールバー非表示 */
+    cursor: pointer; /* タップ可能であることを示す */
+}
+
+#light-area {
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* 初期の色（暗い） */
+    transition: background-color 0.3s ease-in-out; /* 色の変化を滑らかに */
+    display: flex; /* UIを中央に配置する場合 */
+    justify-content: center;
+    align-items: center;
+    color: white; /* テキストの色 */
+    font-size: 2em;
+    /* filter: brightness(100%); /* 明るさ調整用（JSで操作） */
+    /* transition: filter 0.3s ease-in-out; */
+}
